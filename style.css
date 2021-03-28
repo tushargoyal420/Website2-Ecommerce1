@@ -5,13 +5,15 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
-
 /* Header css */
 .navbar{
+  /* background-color: yellow; */
   width: calc(100%-180px);
   height: 60px;
-  /* background-color: yellow; */
   padding: 10px 90px;
+      }
+      .navbar .dropdown{
+        display: none;
       }
       .navbar img{
         height: 100%;
@@ -19,6 +21,7 @@ body{
       .navbar ul{
         float: right;
         display: inline-block;
+        display: block;
       }
       .navbar ul li{
         /* background-color: red; */
@@ -39,16 +42,14 @@ body{
         height: 30px;
         margin-left: 0px;
        }
-
 /* Main Page banner */
 .row{
-  display: flex;
-  align-items: center;
-  /* height: 650px; */
-  height: calc(100vh - 80px);
   background-image: url(img/three.jpg);
   background-repeat: no-repeat;
   background-size: 100%,100vh ;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 80px);
   }
     .col-1{
       flex-basis: 40%;
@@ -65,6 +66,9 @@ body{
         font-size: 20px;
         color: white;
         word-spacing: 2px;
+      }
+      .partition{
+        display: none;
       }
 
 /* Featured products */
@@ -113,20 +117,34 @@ body{
     font size: 12px;
     margin-left: 10px
   }
-
 /* banner2 */
 .offerbanner{
-  width:100%;
-  height:455px;
   background-image: url("img/four.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  height:455px;
+  width:100%;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   /* background-color: yellow; */
-  /* height: 650px; */
-  /* background-size: 100%,100vh ; */
+  }
+  .col-1-banner{
+    /* background-color: red; */
+    width: 40%;
+    padding-left: 100px;
+  }
+  .col-1-banner h1{
+    font-size: 60px;
+    color:white;
+    text-shadow: 0px 3px 10px black;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+    }
+  .offerbanner .col-1-banner p{
+    font-size: 20px;
+    color: white;
+    word-spacing: 2px;
   }
   .offerbanner a{
     text-decoration:none;
@@ -144,7 +162,6 @@ body{
       color: white;
       border:none;
     }
-
 /* footer */
 .footer{
   width: 100%;
@@ -157,8 +174,7 @@ body{
   .footer .col-4{
     flex-basis:25%;
     height: 100%;
-    display: inline-block;
-    padding-left:100px;
+    text-align: center;
   }
   .footer .col-4 h2{
     font-size: 30px;
@@ -174,7 +190,6 @@ body{
       padding: 5px ;
       }
     .footer .col-4 li img{
-
       height:30px;
       width:30px;
     }
@@ -183,12 +198,14 @@ body{
       color: white;
       cursor:pointer;
       transition: transform 0.2s;
-
+    }
+    .footer .col-4 ul li p{
+      font-size: 17px;
+      display: inline-block;
     }
     .footer .col-4 ul li:hover{
       transform: scale(1.1,1.1);
     }
-
     .footer hr{
       width: 95%;
       margin: auto;
@@ -200,3 +217,158 @@ body{
       margin: 5px 40px 0px 0;
 
     }
+
+@media only screen and (max-width: 800px) {
+  .navbar{
+    width: calc(100%-20px);
+    height: 20px;
+    padding: 10px 10px;
+    /* background-color: yellow; */
+        }
+        .navbar .dropdown{
+          display: block;
+          float: right;
+          display: inline-block;
+          height: 60%;
+        }
+        .navbar ul{
+          float: right;
+          display: inline-block;
+          display: none;
+        }
+        .navbar ul li{
+          /* background-color: red; */
+          display: inline-block;
+          margin-right: 30px;
+          font-size: 20px;
+          line-height: 60px;
+          font-weight: 500;
+          cursor:pointer;
+          transition: transform 0.2s;
+        }
+        .navbar ul li:hover{
+           transform: scale(1.2,1.2);
+          /* transform: translateY(5px); */
+        }
+        .navbar ul img{
+          height: 30px;
+          margin-left: 0px;
+         }
+  .row{
+    /* background-color: red; */
+      display: flex;
+     height:330px;
+     background-image: url(img/three300.png);
+     background-repeat: no-repeat;
+     background-size: 100%,0 ;
+     }
+       .col-1{
+         padding-top: 180px;
+         text-align: center;
+         flex-basis: 100%;
+         padding-left: 0;
+         margin: auto;
+         width: 100%;
+         padding-left: 20px;
+         padding-right: 20px;
+         }
+         .col-1 h1{
+           font-size: 25px;
+           color:black;
+           text-shadow: 0px 0px 0px black;
+           word-spacing: 0px;
+           letter-spacing: 1px;
+         }
+         .col-1 p{
+           font-size: 12px;
+           color: black;
+         }
+.partition{
+  display: block;
+  width: 80%;
+  margin: auto;
+
+}
+.categories{
+    /* background-color: yellow ; */
+    width: calc(100%-40px);
+    padding: 20px 20px 00px 20px;
+    margin-bottom: 20px;
+    }
+    .categories .heading{
+      font-size: 15px;
+      }
+    .categories .headingline{
+      width: 120px;
+      height: 5px;
+    }
+    .categories .col-3{
+      display: inline-block;
+      cursor:pointer;
+    }
+    .categories .col-3 .seatname{
+      text-align: center;
+
+    }
+    .categories .col-3 img{
+      height: 200px;
+      width: 200px;
+}
+.offerbanner{
+  background-image: url("img/four300.png");
+  height:332px;
+  border-bottom: 2px solid black;
+  /* background-color: yellow; */
+  }
+  .col-1-banner{
+    /* background-color: red; */
+    width: 100%;
+    margin-top: 170px;
+    padding: 10px 20px;
+  }
+  .col-1-banner h1{
+    font-size: 25px;
+    color:black;
+    text-shadow: 0px 0px 0px black;
+    word-spacing: 0px;
+    letter-spacing: 1px;
+    }
+    .offerbanner .col-1-banner p{
+      font-size: 12px;
+      color: black;
+    }
+  .offerbanner a{
+    border: 1px solid black;
+    padding: 4px 20px;
+}
+.footer{
+  padding: 10px 0 40px 0;
+  height: auto;
+  text-align: center;
+  }
+  .footer .links{
+    display: inline-block;
+  }
+  .footer .col-4{
+    margin: 15px 0;
+  }
+  .footer .col-4 h2{
+    font-size: 20px;
+    }
+  .footer .col-4 ul li p{
+    font-size: 14px;
+  }
+  .footer .col-4 ul{
+    font-size: 14px;
+    }
+  .footer .singleline li{
+    display: inline-block;
+  }
+  .footer hr{
+    margin-top: 10px;
+    }
+  .footer .name{
+    margin: 10px 10px 00px 0;
+}
+
+}
