@@ -1,0 +1,753 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.navbar{
+  /* background-color: red; */
+  width: calc(100% - 15px);
+  padding: 5px 5px 5px 10px;
+  }
+  .navbar .dropdown{
+    display: block;
+    display: inline-block;
+    float: right;
+    padding: 12px;
+  }
+    .navbar .dropdown img{
+      height: 18px;
+    }
+  .navbar .logo img{
+    height: 38px;
+  }
+  .navbar ul{
+    display: none;
+  }
+  .navbar ul li{
+    /* background-color: red; */
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: 550;
+    cursor:pointer;
+    transition: transform 0.2s;
+  }
+  .navbar ul li:hover{
+     transform: scale(1.2,1.2);
+    /* transform: translateY(5px); */
+  }
+  .navbar ul img{
+    height: 30px;
+    margin-left: 0px;
+   }
+.row{
+  }
+  .col-1{
+    text-align: center;
+  }
+  .col-1 img{
+    width:100%;
+  }
+  .col-1 h1{
+    font-size:25px;
+    color:black;
+    word-spacing:2px;
+    letter-spacing: 2px;
+    padding-top: 5px;
+  }
+  .col-1 p{
+    font-weight: 550;
+    font-size: 16px;
+    font-style: italic;
+    color: black;
+    padding: 5px 10px 0px 10px;
+    }
+  .col-2{
+    display: none;
+}
+.redpartition{
+    width: 80%;
+    height: 5px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: red;
+    border-radius: 4px;
+}
+.categories{
+  /* background-color: green; */
+  width: calc(100%- 20px);
+  height:100%;
+  padding: 10px 5px 10px 5px;
+  margin-bottom: 20px;
+    /* text-align: center; */
+  }
+  .categories .heading{
+    font-size: 15px;
+    text-align: center;
+  }
+  .categories .headingline{
+    width: 60%;
+    height: 5px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: red;
+  }
+  .categories .col-3{
+    /* background-color: red; */
+    display: inline-block;
+    /* width: 50%; */
+    width: calc(50% - 12px);
+    margin: 10px 5px 5px 5px;
+    padding-bottom: 10px;
+    cursor:pointer;
+    transition: transform 0.5s;
+  }
+  .categories .col-3:hover{
+    transform: scale(1.1,1.1);
+  }
+
+  .categories .col-3 img{
+    width: 100%;
+    display: inline-block;
+  }
+  .categories .col-3 .seatname{
+    /* text-align: center; */
+    font-size: 12px;
+  }
+.offerbanner{
+  /* background-color: yellow; */
+  width:100%;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+  }
+  .offerbanner .banner-image img{
+    width: 100%;
+  }
+  .offerbanner .banner-data h1{
+    font-size: 3.5vh;
+    color:black;
+    text-shadow: 0px 0px 0px black;
+    word-spacing: 0px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+  }
+  .offerbanner .banner-data p{
+    font-size: 2.2vh;
+    color: black;
+    word-spacing: 2px;
+    padding: 0px 5px;
+  }
+  .offerbanner .banner-data a{
+    text-decoration:none;
+    color:white;
+    border: 1px solid black;
+    padding: 4px 20px;
+    display: inline-block;
+    margin: 10px 0px 10px 5px;
+    background-color: white;
+    color:black;
+    border-radius: 30px;
+    font-weight: 700;
+    }
+    .offerbanner .banner-data a:hover{
+      background-color: green;
+      color: white;
+      border:none;
+  }
+.offerbanner-2{
+  display: none;
+}
+.footer{
+  width: 100%;
+  background-color:#111010;
+  padding: 10px 0 20px 0;
+  text-align: center;
+  }
+  .footer .links{
+    padding-top:20px;
+  }
+  .footer .col-4{
+    /* background-color: red; */
+    height: 100%;
+    text-align: center;
+    margin: 15px 0;
+  }
+  .footer .col-4 h2{
+    font-size: 20px;
+    color: white;
+    }
+  .footer .col-4 ul{
+    font-size: 14px;
+    color: white;
+    padding-top: 15px;
+    list-style: none;
+    }
+    .footer .col-4 li{
+      padding: 5px ;
+      }
+    .footer .col-4 li img{
+      height:30px;
+      width:30px;
+    }
+    .footer .col-4 a{
+      text-decoration: none;
+      color: white;
+      cursor:pointer;
+      transition: transform 0.2s;
+    }
+    .footer .col-4 ul li p{
+      font-size: 14px;
+      display: inline-block;
+    }
+    .footer .col-4 ul li:hover{
+      transform: scale(1.1,1.1);
+    }
+    .footer hr{
+      width: 95%;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      }
+    .footer .name{
+      color: white;
+      margin: 10px 10px 0px 0px;
+    }
+    .footer .singleline li{
+      display: inline-block;
+    }
+
+.partition{
+    display: none;
+}
+@media only screen and (min-width: 600px) {
+  .navbar{
+    }
+    .navbar .dropdown{
+      display: block;
+      display: inline-block;
+      float: right;
+      padding: 14px 12px 12px 0px;
+    }
+      .navbar .dropdown img{
+        height: 25px;
+      }
+    .navbar .logo img{
+      height: 50px;
+    }
+    .navbar ul{
+      display: none;
+    }
+  .row{
+    }
+    .col-1 h1{
+      font-size:35px;
+      }
+    .col-1 p{
+      font-weight: 580;
+      font-size: 20px;
+    }
+  .redpartition{
+      height: 6px;
+  }
+  .categories{
+    /* background-color: green; */
+    width: calc(100%- 90px);
+    padding: 10px 30px 10px 30px;
+        }
+    .categories .heading{
+      font-size:20px;
+    }
+    .categories .headingline{
+      height: 6px;
+      margin-top: 8px;
+      }
+    .categories .col-3{
+      /* background-color: red; */
+      display: inline-block;
+      /* width: 50%; */
+      width: calc(50% - 32px);
+      margin: 10px 15px 5px 15px;
+      padding-bottom: 10px;
+    }
+    .categories .col-3 .seatname{
+      /* text-align: center; */
+      font-size: 20px;
+    }
+}
+@media only screen and (min-width: 768px) {
+  .navbar{
+    /* background-color: red; */
+    }
+    .navbar .dropdown{
+      display: none;
+    }
+    .navbar .logo img{
+      height: 65px;
+      float: left;
+    }
+    .navbar ul{
+      display: block;
+      display: inline-block;
+      float: right;
+    }
+    .navbar ul li{
+      /* background-color: red; */
+      font-size: 20px;
+      line-height: 60px;
+      font-weight: 550;
+    }
+    .navbar ul img{
+      height: 30px;
+      margin-left: 0px;
+     }
+  .row{
+    }
+    .col-1 h1{
+      font-size:45px;
+      }
+    .col-1 p{
+      font-weight: 580;
+      font-size: 27px;
+    }
+}
+@media only screen and (min-width: 992px) {
+  .navbar{
+    height:63px;
+    /* background-color: red; */
+    }
+    .navbar .dropdown{
+        display: none;
+    }
+    .navbar .logo img{
+      height: 65px;
+      float: left;
+    }
+    .navbar ul{
+      display: block;
+      display: inline-block;
+      float: right;
+    }
+    .navbar ul li{
+      /* background-color: red; */
+      font-size: 2.2vh;
+      line-height: 60px;
+      font-weight: 550;
+    }
+    .navbar ul img{
+      height: 30px;
+      margin-left: 0px;
+     }
+  .row{
+    position: relative;
+    margin-bottom: 50px;
+    /* height: 400px; */
+    }
+    .col-1{
+      display: none;
+    }
+    .col-2{
+      /* background-color: green; */
+      display: block;
+      }
+    .col-2 img{
+      width: 100%;
+    }
+    .col-2 .data{
+      /* background-color: red; */
+      width: 40%;
+      height: 100%;
+      padding: 10.2vh 40px;
+      position: absolute;
+    }
+    .col-2 .data h1{
+      text-shadow: 0px 3px 10px black;
+      text-align: left;
+      font-size:  4.2vw;
+      /* 45px; */
+      color:white;
+      word-spacing:2px;
+      letter-spacing: 2px;
+      padding-bottom: 20px;
+      }
+    .col-2 p{
+      text-align: left;
+      font-weight: 550;
+      font-size: 3.0vh;
+      font-style: italic;
+      color: white;
+      padding: 0px 0px 0px 00px;
+  }
+  .redpartition{
+    display: none;
+  }
+  .categories{
+    /* background-color: green; */
+    width: calc(100%- 20px);
+    padding: 10px 10px 10px 10px;
+        }
+    .categories .heading{
+      font-size:20px;
+    }
+    .categories .headingline{
+      height: 6px;
+      margin-top: 8px;
+      }
+    .categories .col-3{
+      /* background-color: red; */
+      display: inline-block;
+      /* width:25%; */
+      width: calc(25% - 23px);
+      margin: 10px 10px 5px 10px;
+      padding-bottom: 10px;
+    }
+    .categories .col-3 .seatname{
+      /* text-align: center; */
+      font-size: 12px;
+    }
+  .offerbanner{
+    display: none;
+  }
+  .offerbanner-2{
+    display: block;
+    position: relative;
+    }
+    .offerbanner-2 .banner-data2{
+      /* background-color: red; */
+      width: 40%;
+      height: 100%;
+      position: absolute;
+      padding-left: 20px;
+      padding-top: 2.5vh;
+    }
+    .offerbanner-2 .banner-image2 img{
+      width: 100%;
+    }
+    .offerbanner-2 .banner-data2 h1{
+      font-size: 4.2vh;
+      color:white;
+      text-shadow: 0px 0px 0px black;
+      word-spacing: 0px;
+      letter-spacing: 1px;
+      padding-left: 5px;
+    }
+    .offerbanner-2 .banner-data2 p{
+      font-size: 2.8vh;
+      color:white;
+      word-spacing: 2px;
+      padding: 0px 5px;
+    }
+    .offerbanner-2 .banner-data2 a{
+      text-decoration:none;
+      color:white;
+      border: 1px solid none;
+      padding: 8px 30px;
+      display: inline-block;
+      margin: 15px 0px 10px 5px;
+      background-color: white;
+      color:black;
+      border-radius: 30px;
+      font-weight: 900;
+      font-size: 2vh;
+      }
+      .offerbanner-2 .banner-data2 a:hover{
+        background-color: green;
+        color: white;
+        border:none;
+    }
+  .footer{
+    padding: 00px 0 00px 0;
+    text-align: center;
+    }
+    .footer .links{
+      display: flex;
+      margin:auto;
+    }
+    .footer .col-4{
+      /* background-color: red; */
+      margin-left: auto;
+      margin-right: auto;
+      flex-basis: 20%;
+      height: 100%;
+      text-align: center;
+    }
+      .footer .col-4 h2{
+        font-size: 4vh;
+        color: white;
+        }
+      .footer .col-4 ul{
+        font-size: 2.5vh;
+        color: white;
+        padding-top: 15px;
+        list-style: none;
+        /*display: flex; */
+        }
+        .footer .col-4 li{
+          /* background-color: green; */
+          padding: 5px;
+          margin-left: auto;
+          margin-right: auto;
+          }
+        .footer .col-4 a{
+          text-decoration: none;
+          color: white;
+          cursor:pointer;
+          transition: transform 0.2s;
+          /* background-color: red; */
+        }
+        .footer .col-4 ul li p{
+          font-size: 2.5vh;
+          display: inline-block;
+        }
+        .footer .col-4 ul li:hover{
+          transform: scale(1.1,1.1);
+        }
+        .footer hr{
+          width: 95%;
+          margin: auto;
+          margin-top: 10px;
+          margin-bottom: 5px;
+          }
+        .footer .name{
+          color: white;
+          margin: 10px 10px 0px 0px;
+        }
+        .footer .singleline li{
+          display: block;
+        }
+}
+@media only screen and (min-width: 1200px) {
+  .row{
+    position: relative;
+    margin-bottom: 50px;
+    /* height: 400px; */
+    }
+    .col-1{
+      display: none;
+    }
+    .col-2{
+      /* background-color: green; */
+      display: block;
+      }
+    .col-2 img{
+      width: 100%;
+    }
+    .col-2 .data{
+      /* background-color: red; */
+      width: 40%;
+      height: 100%;
+      padding: 20vh 40px;
+      position: absolute;
+    }
+    .col-2 .data h1{
+      text-shadow: 0px 3px 10px black;
+      text-align: left;
+      font-size:  4.2vw;
+      color:white;
+      word-spacing:2px;
+      letter-spacing: 2px;
+      padding-bottom: 20px;
+      }
+    .col-2 p{
+      text-align: left;
+      font-weight: 550;
+      font-size: 3.0vh;
+      font-style: italic;
+      color: white;
+      padding: 0px 0px 0px 00px;
+  }
+  .redpartition{
+    display: none;
+  }
+  .categories{
+    width: 60%;
+    margin: auto;
+    /* width: calc(100%- 20px); */
+    /* background-color: green; */
+    padding: 10px 10px 10px 10px;
+        }
+    .categories .heading{
+      font-size:20px;
+    }
+    .categories .headingline{
+      height: 6px;
+      margin-top: 8px;
+      }
+    .categories .col-3{
+      /* background-color: red; */
+      display: inline-block;
+      /* width:25%; */
+      width: calc(25% - 23px);
+      margin: 10px 10px 5px 10px;
+      padding-bottom: 10px;
+    }
+    .categories .col-3 .seatname{
+      /* text-align: center; */
+      font-size: 2.2vh;
+    }
+  .offerbanner{
+    display: none;
+  }
+  .offerbanner-2{
+    display: block;
+    position: relative;
+    }
+    .offerbanner-2 .banner-data2{
+      /* background-color: red; */
+      width: 40%;
+      height: 100%;
+      position: absolute;
+      padding-left: 20px;
+      padding-top: 2.5vh;
+    }
+    .offerbanner-2 .banner-image2 img{
+      width: 100%;
+    }
+    .offerbanner-2 .banner-data2 h1{
+      font-size: 4.2vh;
+      color:white;
+      text-shadow: 0px 0px 0px black;
+      word-spacing: 0px;
+      letter-spacing: 1px;
+      padding-left: 5px;
+    }
+    .offerbanner-2 .banner-data2 p{
+      font-size: 3vh;
+      color:white;
+      word-spacing: 2px;
+      padding: 0px 5px;
+    }
+    .offerbanner-2 .banner-data2 a{
+      text-decoration:none;
+      color:white;
+      border: 1px solid none;
+      padding: 8px 30px;
+      display: inline-block;
+      margin: 15px 0px 10px 5px;
+      background-color: white;
+      color:black;
+      border-radius: 30px;
+      font-weight: 900;
+      font-size: 2vh;
+      }
+      .offerbanner-2 .banner-data2 a:hover{
+        background-color: green;
+        color: white;
+        border:none;
+  }
+  .footer{
+    padding: 0px 0 0px 0;
+    text-align: center;
+    }
+    .footer .links{
+      display: flex;
+      margin:auto;
+    }
+    .footer .col-4{
+      /* background-color: red; */
+      margin-left: auto;
+      margin-right: auto;
+      flex-basis: 20%;
+      height: 100%;
+      text-align: center;
+    }
+      .footer .col-4 h2{
+        font-size: 3.5vh;
+        color: white;
+        }
+      .footer .col-4 ul{
+        font-size: 2.8vh;
+        color: white;
+        padding-top: 15px;
+        list-style: none;
+        /*display: flex; */
+        }
+        .footer .col-4 li{
+          /* background-color: green; */
+          padding: 5px;
+          margin-left: auto;
+          margin-right: auto;
+          }
+        .footer .col-4 a{
+          text-decoration: none;
+          color: white;
+          cursor:pointer;
+          transition: transform 0.2s;
+          /* background-color: red; */
+        }
+        .footer .col-4 ul li p{
+          font-size: 2.8vh;
+          display: inline-block;
+        }
+        .footer .col-4 ul li:hover{
+          transform: scale(1.1,1.1);
+        }
+        .footer hr{
+          width: 95%;
+          margin: auto;
+          margin-top: 10px;
+          margin-bottom: 5px;
+          }
+        .footer .name{
+          color: white;
+          margin: 10px 10px 0px 0px;
+        }
+        .footer .singleline li{
+          display: block;
+        }
+
+}
+@media only screen and (min-width: 1400px) {
+  .offerbanner-2{
+    display: block;
+    position: relative;
+    }
+    .offerbanner-2 .banner-data2{
+      /* background-color: red; */
+      width: 40%;
+      height: 100%;
+      position: absolute;
+      padding-left: 20px;
+      padding-top: 2.5vh;
+    }
+    .offerbanner-2 .banner-image2 img{
+      width: 100%;
+    }
+    .offerbanner-2 .banner-data2 h1{
+      font-size: 5.2vh;
+      color:white;
+      text-shadow: 0px 0px 0px black;
+      word-spacing: 0px;
+      letter-spacing: 1px;
+      padding-left: 5px;
+    }
+    .offerbanner-2 .banner-data2 p{
+      font-size: 4vh;
+      color:white;
+      word-spacing: 2px;
+      padding: 0px 5px;
+    }
+    .offerbanner-2 .banner-data2 a{
+      text-decoration:none;
+      color:white;
+      border: 1px solid none;
+      padding: 8px 30px;
+      display: inline-block;
+      margin: 15px 0px 10px 5px;
+      background-color: white;
+      color:black;
+      border-radius: 30px;
+      font-weight: 900;
+      font-size: 3vh;
+      }
+      .offerbanner-2 .banner-data2 a:hover{
+        background-color: green;
+        color: white;
+        border:none;
+  }
+}
