@@ -44,7 +44,7 @@ body{
        }
 /* Main Page banner */
 .row{
-  background-image: url(img/three.jpg);
+  background-image: url(../img/three.jpg);
   background-repeat: no-repeat;
   background-size: 100%,100vh ;
   display: flex;
@@ -119,7 +119,7 @@ body{
   }
 /* banner2 */
 .offerbanner{
-  background-image: url("img/four.jpg");
+  background-image: url("../img/four.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   height:455px;
@@ -258,7 +258,7 @@ body{
     /* background-color: red; */
       display: flex;
      height:330px;
-     background-image: url(img/three300.png);
+     background-image: url(../img/three300.png);
      background-repeat: no-repeat;
      background-size: 100%,0 ;
      }
@@ -315,7 +315,7 @@ body{
       width: 200px;
 }
 .offerbanner{
-  background-image: url("img/four300.png");
+  background-image: url("../img/four300.png");
   height:332px;
   border-bottom: 2px solid black;
   /* background-color: yellow; */
